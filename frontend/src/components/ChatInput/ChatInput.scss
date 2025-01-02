@@ -1,0 +1,39 @@
+.ChatInput {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 8px;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+
+  input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s;
+    max-width: 100%;  // Ensures it doesn't grow too large
+
+    &:focus {
+      border: 1px solid #007bff;
+    }
+  }
+
+  button {
+    margin-left: 8px;
+    background-color: #007bff;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}

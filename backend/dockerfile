@@ -1,0 +1,17 @@
+# Step 1: Use the official Golang image as the builder
+FROM golang:1.19 AS builder
+
+# Step 2: Set the working directory inside the container
+WORKDIR /app
+
+# Step 3: Copy the Go module files from the backend folder
+COPY go.mod go.sum ./
+
+# Step 4: Download the module dependencies
+RUN go mod download
+
+# Step 5: Copy all files from the backend folder into the container
+COPY . .
+
+# Step 6: Run the Go application (this will dynamically compile and run the code)
+CMD ["go", "run", "main.go"]

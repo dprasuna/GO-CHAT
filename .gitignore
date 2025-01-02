@@ -1,0 +1,38 @@
+# Node modules
+/node_modules/
+
+# Build output
+/build/
+
+# React-specific
+/.cache/
+/public/static/
+/*.env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# IDE/Editor config files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Dependency directories
+bower_components/
+
+# TypeScript specific
+*.tsbuildinfo
+
+# Testing
+/coverage/
+
+# Other files
+/.pnp
+.pnp.js

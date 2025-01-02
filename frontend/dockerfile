@@ -1,0 +1,20 @@
+# Step 1: Use Node.js to install dependencies and build the React app
+FROM node:18 AS build
+
+WORKDIR /app
+COPY package.json package-lock.json ./
+RUN npm install
+COPY . ./
+RUN npm run build
+
+# Step 2: Use nginx to serve the built React app
+FROM nginx:alpine
+
+# Copy the build files from the previous stage to the nginx container
+COPY --from=build /app/build /usr/share/nginx/html
+
+# Expose port 3000 (this will be the port the frontend is accessible from)
+EXPOSE 3000
+
+# Run nginx to serve the app
+CMD ["nginx", "-g", "daemon off;"]
