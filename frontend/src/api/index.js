@@ -1,4 +1,5 @@
-var socket = new WebSocket('ws://localhost:9000/ws');
+// var socket = new WebSocket('ws://localhost:9000/ws');
+var socket = new WebSocket('wss://go-chat-pbv9.onrender.com/ws');
 
 let connect = (cb)=>{
     console.log("connecting")
