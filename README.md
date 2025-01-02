@@ -2,6 +2,11 @@
 
 This repository contains a chat application built using **React** for the frontend and **Go** with **WebRTC** for the backend. Docker is used to containerize both the frontend and backend, making it easy to deploy the application on any machine with Docker installed.
 
+## Demo Video
+
+Watch the demo video to see the application in action:
+[Demo Video]([https://link-to-your-video.com](https://youtu.be/DUJtIEm6qGY?si=jWa0q6fFDAg29pha))
+
 ## Prerequisites
 
 Before you can run this application, make sure you have the following installed:
