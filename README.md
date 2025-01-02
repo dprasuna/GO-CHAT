@@ -4,8 +4,10 @@ This repository contains a chat application built using **React** for the fronte
 
 ## Demo Video
 
+## Demo Video
+
 Watch the demo video to see the application in action:
-[Demo Video]([https://link-to-your-video.com](https://youtu.be/DUJtIEm6qGY?si=jWa0q6fFDAg29pha))
+[Demo Video](https://youtu.be/DUJtIEm6qGY?si=jWa0q6fFDAg29pha)
 
 ## Prerequisites
 
